@@ -1,0 +1,103 @@
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px;
+  margin: auto 100px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #93c2f8;
+  text-align: center;
+}
+
+.container .normal-hover, .container .Transition-hover, .container .animation-hover {
+  width: 200px;
+  color: white;
+}
+
+.container .normal-hover div, .container .Transition-hover div, .container .animation-hover div {
+  background-color: #519ff8;
+  height: 50px;
+  line-height: 50px;
+  z-index: 2;
+  position: relative;
+}
+
+.container .normal-hover a, .container .Transition-hover a, .container .animation-hover a {
+  background-color: #353636;
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  text-decoration: none;
+  width: 100%;
+  color: white;
+  position: relative;
+  top: -50px;
+  z-index: 1;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.container :hover a {
+  top: 0;
+  -webkit-animation: move 1.5s ease-in-out;
+          animation: move 1.5s ease-in-out;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform: rotateX(-50deg);
+            transform: rotateX(-50deg);
+  }
+  20% {
+    -webkit-transform: rotateX(50deg);
+            transform: rotateX(50deg);
+  }
+  40% {
+    -webkit-transform: rotateX(-30deg);
+            transform: rotateX(-30deg);
+  }
+  60% {
+    -webkit-transform: rotateX(30deg);
+            transform: rotateX(30deg);
+  }
+  80% {
+    -webkit-transform: rotateX(-30deg);
+            transform: rotateX(-30deg);
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+}
+
+@keyframes move {
+  0% {
+    -webkit-transform: rotateX(-50deg);
+            transform: rotateX(-50deg);
+  }
+  20% {
+    -webkit-transform: rotateX(50deg);
+            transform: rotateX(50deg);
+  }
+  40% {
+    -webkit-transform: rotateX(-30deg);
+            transform: rotateX(-30deg);
+  }
+  60% {
+    -webkit-transform: rotateX(30deg);
+            transform: rotateX(30deg);
+  }
+  80% {
+    -webkit-transform: rotateX(-30deg);
+            transform: rotateX(-30deg);
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+}
+/*# sourceMappingURL=main.css.map */
